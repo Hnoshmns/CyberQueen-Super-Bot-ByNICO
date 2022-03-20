@@ -1,0 +1,6 @@
+build: 
+  docker: 
+      worker: /plugins/Dockerfile
+run:
+   worker: npm start
+ 
