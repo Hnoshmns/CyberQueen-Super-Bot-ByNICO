@@ -409,8 +409,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;*/
-                    }
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }*/
     
                     if (sendMsg) {
                         if (config.SEND_READ && command.on === undefined) {
