@@ -1,6 +1,6 @@
 {
   "name": "CyberQueen",
-  "version": "3.8.4",
+  "version": "3.9.9",
   "description": "CyberQueen - A Whatsapp userbot. ",
   "main": "./CyberQueen/cyberqueen.js",
   "scripts": {
