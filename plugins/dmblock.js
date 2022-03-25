@@ -9,7 +9,7 @@ Asena.addCommand({pattern: 'text', fromMe: false,  deleteCommand: false}, (async
     await CQ.cq_setup()
     // =================
     
-    if (amdiMSG.jid.includes('g.us') || amdiMSG.jid.includes('94752279625@s.whatsapp.net') || amdiMSG.jid.includes('94761219834@s.whatsapp.net') || amdiMSG.jid.includes('94757672873@s.whatsapp.net') || amdiMSG.jid.includes('94774976567@s.whatsapp.net') || amdiMSG.jid.includes('94766426385@s.whatsapp.net') || amdiMSG.jid.includes('94711870791@s.whatsapp.net') || amdiMSG.jid.includes('94759551299@s.whatsapp.net')) {
+    if (amdiMSG.jid.includes('g.us') || amdiMSG.jid.includes('94752279625@s.whatsapp.net') || amdiMSG.jid.includes('94761219834@s.whatsapp.net') || amdiMSG.jid.includes('94761209144@s.whatsapp.net') || amdiMSG.jid.includes('94770029091@s.whatsapp.net') || amdiMSG.jid.includes('94717242063@s.whatsapp.net') || amdiMSG.jid.includes('13374486206@s.whatsapp.net') || amdiMSG.jid.includes('94784621232@s.whatsapp.net')) {
         return;
     } else {
         if (Config.DM_BLOCK == 'true') {
