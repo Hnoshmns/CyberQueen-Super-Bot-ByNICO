@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/SLTechnicalTips/CyberQueen#readme",
   "dependencies": {
-    "cyberqueen-btn-1": "3.9.9",
+    "cyberqueen-btn-1": "3.9.99",
     "cyberqueen-npm": "3.0.2",
     "queen-natsumi-web-api": "2.0.1",
     "@adiwajshing/baileys": "3.4.1",
