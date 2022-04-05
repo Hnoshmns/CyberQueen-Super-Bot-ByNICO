@@ -23,4 +23,4 @@ Asena.addCommand({pattern: 'join ?(.*)', fromMe: true, desc: descjoin}, (async (
     await message.client.acceptInvite(code)
     return await message.sendMessage(jsc)
 
-};
+}
