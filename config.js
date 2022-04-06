@@ -50,6 +50,7 @@ module.exports = {
     RGMSA: process.env.ZENZ_API_A === undefined ? 'aca83a4354ac' : process.env.ZENZ_API_A,
     ALIVE_STIC: process.env.ALIVE_STIC === undefined ? 'true' : process.env.ALIVE_STIC,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
+    ALIVE_LINK_STIC: process.env.ALIVE_LINK_STIC === undefined ? 'default' : process.env.ALIVE_LINK_STIC,
     RULES_LOGO: process.env.RULES_LOGO === undefined ? 'https://i.ibb.co/J3FK9zw/image.png' : process.env.RULES_LOGO,
     BRANCH: 'master',
     HEROKU: {
