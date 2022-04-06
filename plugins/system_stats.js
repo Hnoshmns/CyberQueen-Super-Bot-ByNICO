@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
      }
     }));
     
-    /*Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
        if (Config.ALIVE_LINK_STIC == 'default') {
        const sticker = await axios.get('https://i.ibb.co/XkWhjLh/Nt-OOzj-C3-HBAB.webp', {responseType: 'arraybuffer'})
        await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )
@@ -89,7 +89,8 @@ else if (Config.WORKTYPE == 'public') {
                         HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
                     } else {
                         HANDLER = '.';
-                    }*/
+                    }
+                    }));
 
     
     Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
