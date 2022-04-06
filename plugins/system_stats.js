@@ -1,8 +1,7 @@
-/* Copyright (C) 2021 CYBER QUEEN
+/* Copyright (C) 2022 CYBER QUEEN
 CODDED BY NICO
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
 */
 
 const Asena = require('../events');
@@ -69,7 +68,30 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2022 | ᳆⃞🇱🇰ᴄʏͥʙᴇͣʀͫ↯ǫᴜᴇᴇɴᬐ*' })
      }
     }));
+    
+    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
+       if (Config.ALIVE_LINK_STIC == 'default') {
+       const sticker = await axios.get('https://i.ibb.co/XkWhjLh/Nt-OOzj-C3-HBAB.webp', {responseType: 'arraybuffer'})
+       await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )
+       }else { if (!Config.ALIVE_LINK_STIC.includes('webp')){
+        const sticker = await axios.get('https://i.ibb.co/XkWhjLh/Nt-OOzj-C3-HBAB.webp', {responseType: 'arraybuffer'})
+       await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )
+    }else{
+             const sticker = await axios.get(Config.ALIVE_LINK_STIC, {responseType: 'arraybuffer'})
+            await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )                                        
+                                                                                                   }}
+                                                                                                   
+                                                                                                   
+        
+        var HANDLER = '';
+    
+                    if (/\[(\W*)\]/.test(Config.HANDLERS)) {
+                        HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
+                    } else {
+                        HANDLER = '.';
+                    }
 
+    
     Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
